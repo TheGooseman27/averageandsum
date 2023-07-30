@@ -6,11 +6,13 @@ import javax.swing.JTextField;
 
 public class Main 
 {
+    //Does the math for the average
     static double average(int a[], int n)
     {
         int sum = 0;
         for (int i = 0; i < n; i++)
         {
+            //Does the math for the sum
             sum += a[i];
         }
         System.out.println("The total sum of all the numbers is: "+sum);
@@ -24,7 +26,8 @@ public class Main
         int n; 
         System.out.println("Enter how many numbers there are in total: ");
         n=sc.nextInt(); 
-        
+
+        //Creates the array for entered numbers, also stores entered numbers and amount of numbers
         int arr[] = new int[n];   
         System.out.println("Enter the numbers: ");
         for(int i=0;i<n;i++)      
